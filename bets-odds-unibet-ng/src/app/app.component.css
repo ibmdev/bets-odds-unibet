@@ -1,0 +1,8 @@
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: rgb(23, 184, 23);
+}
+.mat-toolbar.mat-primary {
+    background: #dee2e6 !important;
+    color: #000 !important;
+}

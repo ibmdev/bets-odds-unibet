@@ -1,0 +1,61 @@
+<!-- Interface Material Design  -->
+<!-- Menu Toolbar -->
+<mat-toolbar  color="primary"  class="fixed-header">
+  <mat-toolbar-row>
+  
+  <span routerLink="/"><img  src="./assets/artificial-intelligence-logo.svg"  style="width:50px;"></span>
+      
+  <a  mat-button  routerLink="/bets/"  routerLinkActive="active">Home Away</a>
+  <a  mat-button  routerLink="/bets/hxa">HXA</a>
+  <a  mat-button  routerLink="/bets/ou">O/U</a>
+  </mat-toolbar-row>
+  </mat-toolbar>
+  <main>
+      <router-outlet  style="margin-top: 80px;"></router-outlet>
+  </main>
+
+
+
+<!--
+<div style="text-align:center">
+  <h1 style="color: rgb(23, 184, 23)">
+    {{title}}
+  </h1>
+</div>
+
+<ul class="nav nav-pills nav-fill">
+  <li class="nav-item">
+    
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link">Market 1N2</a>
+  </li>
+  
+  <li class="nav-item">
+      <a routerLink="/lineseries" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link">Market + 1.5</a>
+  </li>
+  <li class="nav-item">
+    <a routerLink="/zoomdatetime" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link">Market + 2.5</a>
+  </li>
+  <li class="nav-item">
+    <a routerLink="/unavailable" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link">Non disponible</a>
+  </li>
+
+</ul>
+-->
+
+
+<!--
+
+<jqxChart #myChart
+    [width]="getWidth()" [height]="500" 
+    [title]="'Web Site Traffic Analysis'" [description]="'Monthly unique visitors (percentage stacked)'"
+    [showLegend]="true" [enableAnimations]="true" [padding]="padding"
+    [titlePadding]="titlePadding" [source]="dataAdapter" [xAxis]="xAxis"
+    [valueAxis]="valueAxis" [colorScheme]="'scheme04'" [seriesGroups]="seriesGroups">
+</jqxChart>
+
+-->
+
+
+
+
+
