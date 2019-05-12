@@ -74,10 +74,10 @@ export class AppComponent implements OnInit, AfterViewInit {
         }
     ];
     ngOnInit() {
-        console.log('source de données');
+        // console.log('source de données');
     };
     ngAfterViewInit() {
-        console.log('appel après initialisation de la vue de App Components');
+        // console.log('appel après initialisation de la vue de App Components');
     }
     
  }

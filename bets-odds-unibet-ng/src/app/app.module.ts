@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 
 // Module Widget pour la gestion des charts
@@ -15,6 +17,11 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 // Module contenant les composants Material Design
 import { MaterialModule } from './material/material.module';
 
+// Service Navigation
+import { NavigationService } from './services/navigation/navigation.service';
+
+//  Service Guard
+import { AccountGuardService } from './services/guards/account-guard.service';
 
 
 @NgModule({
@@ -24,12 +31,15 @@ import { MaterialModule } from './material/material.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     WidgetsModule,
     DragDropModule,
     BrowserAnimationsModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [AccountGuardService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(private navigationService: NavigationService) {}
+ }
