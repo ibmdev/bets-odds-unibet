@@ -1,0 +1,10 @@
+{
+    
+    "env": {
+      "urlSocietaire":"https://www.services-smabtp.net/monespace/accueilSoc.pu",
+      "domaine": "IARD",
+      "univers": "ENT",
+      "canal": "DIRECT",
+      "urlBetsApplication":"http://localhost:4200/bets"
+    }
+  }
