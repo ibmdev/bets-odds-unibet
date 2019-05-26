@@ -75,6 +75,18 @@ https://blog.thoughtram.io/angular/2016/07/18/guards-in-angular-2.html
 
 https://www.techiediaries.com/angular-inmemory-web-api/
 
+## SAML
+
+https://github.com/slem1/saml-angular
+
+https://spring.io/guides/gs/authenticating-ldap/
+
+https://blog.codecentric.de/en/2019/03/secure-spring-boot-app-saml-keycloak/
+
+https://github.com/thomasdarimont/spring-boot-security-saml-sample/tree/poc/keycloak-saml-idp
+
+https://github.com/keycloak/keycloak-quickstarts
+
 
 ## Formations Angular 
 
