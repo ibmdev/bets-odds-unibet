@@ -1,8 +1,7 @@
 
-     export const versions = {
-        version: '4.0.16',
-        revision: '-1
-23c219ad',
-        branch: 'master'
-        // tslint:disable-next-line:eofline
-      };
+export const versions = {
+   version: '4.0.17',
+   revision: '1a99699d',
+   branch: 'master'
+   // tslint:disable-next-line:eofline
+ };
