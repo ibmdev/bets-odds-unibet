@@ -20,7 +20,7 @@ async function buildInfoCommitAndPush(filename: string) {
 }
 
 async function creerFichierVersion(filename: string) {
-  const revision = (await exec('git rev-parse --short HEAD')).stdout.toString().trim();
+  const revision = (await exec('git rev-parse --short HEAD~1')).stdout.toString().trim();
   const branch = (await exec('git rev-parse --abbrev-ref HEAD')).stdout.toString().trim();
 
   console.log(`version: '${process.env.npm_package_version}', revision: '${revision}', branch: '${branch}'`);
