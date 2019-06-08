@@ -16,17 +16,17 @@ async function updateVersionMinor() {
 async function updateVersionMajor() {
   await execUpdate('npm version major --force');
 }
-async function commitAndPush() {
+async function commitAndPush(filename: string) {
   const branch = (await execUpdate('git rev-parse --abbrev-ref HEAD')).stdout.toString().trim();
   const unstage = (await execUpdate('git reset')).stdout.toString().trim();
   console.log('unstage all files : ', unstage);
   await attente(5000);
-  const stage = (await execUpdate('git add package.json')).stdout.toString().trim();
-  console.log('stage package.json file', stage);
-  await execUpdate('git commit package.json -m \"Release package.json\" package.json');
+  const stage = (await execUpdate('git add ' + filename)).stdout.toString().trim();
+  console.log('stage file' + filename, stage);
+  await execUpdate('git commit -m \"Release package.json\" ' + filename);
   await execUpdate('git push origin ' + branch);
   console.log(`Commit et push sur la branche : '${branch}'`);
 }
 discard('package.json');
 updateVersionPatch();
-commitAndPush();
+commitAndPush('package.json package-lock.json');
