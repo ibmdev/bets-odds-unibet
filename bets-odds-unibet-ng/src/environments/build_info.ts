@@ -1,7 +1,7 @@
 
 export const versions = {
-   version: '4.0.20',
-   revision: '15cb9374',
+   version: '4.0.21',
+   revision: '99e89d64',
    branch: 'master'
    // tslint:disable-next-line:eofline
  };
