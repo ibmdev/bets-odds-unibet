@@ -7,13 +7,14 @@
   "start-prod": "ng serve --configuration prod",
   "mock-server": "json-server --watch mocks/data.json",
   "build": "ng build",
-  "build-release": "npm run updateVersion && npm run createBuildInfo && ng build",
+  "build-release": "npm run updateVersion && npm run createBuildInfo && npm run renameI18N && ng build",
   "build-prod": "ng build --prod=false --configuration prod",
   "test": "ng test",
   "lint": "ng lint",
   "e2e": "ng e2e",
   "createBuildInfo": "ts-node build.info.ts",
-  "updateVersion": "ts-node git.update.version.ts"
+  "updateVersion": "ts-node git.update.version.ts",
+  "renameI18N": "ts-node asset.rename.i18n.ts"
  },
  "private": true,
  "dependencies": {
@@ -36,7 +37,9 @@
   "@angular/cdk": "7.3.7",
   "@angular/material": "7.3.7",
   "json-server": "0.14.2",
-  "hammerjs": "2.0.8"
+  "hammerjs": "2.0.8",
+  "@ngx-translate/core": "11.0.1",
+  "@ngx-translate/http-loader": "4.0.0"
  },
  "devDependencies": {
   "@angular-devkit/build-angular": "~0.13.0",
