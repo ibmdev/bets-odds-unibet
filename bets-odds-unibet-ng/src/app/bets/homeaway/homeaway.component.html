@@ -1,3 +1,17 @@
-<p>
-  homeaway works!
-</p>
+<p>homeaway works!</p>
+
+<h1>{{ 'demo.code' | translate }}</h1>
+
+<p [translate]="'demo.text'"></p>
+
+<p translate>demo.text</p>
+
+<p>{{ 'demo.sayHello' | translate: {'name': 'Andreas'} }}</p>
+
+<p [translate]="'demo.sayHello'" [translateParams]="{'name':'Andreas'}"></p>
+
+<p translate [translateParams]="{'name':'Andreas'}">demo.sayHello</p>
+
+<button (click)="useLanguage('fr')">FR</button>
+<button (click)="useLanguage('en')">EN</button>
+<button (click)="resetLang('en')">Remove EN</button>

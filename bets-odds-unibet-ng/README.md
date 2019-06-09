@@ -96,6 +96,16 @@ https://github.com/keycloak/keycloak-quickstarts
 
 - https://www.angularjswiki.com/angular/buttons-in-angular-using-material-design-mat-button-example/
 
+## Ngx Translate
+
+https://www.codeandweb.com/babeledit/tutorials/how-to-translate-your-angular7-app-with-ngx-translate
+
+https://github.com/ngx-translate/core/issues/886
+
+https://angular-2-training-book.rangle.io/handout/modules/shared-modules-di.html
+
+
+
 
 
 
