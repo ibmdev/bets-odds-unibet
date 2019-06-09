@@ -1,0 +1,7 @@
+{
+    "demo": {
+        "code":"ha",
+        "text": "Home / Away",
+        "sayHello" : "Hello {{name}}"
+    }
+}
