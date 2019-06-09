@@ -12,22 +12,9 @@ async function assetCommitAndPush() {
   const branch = (await execAsset('git rev-parse --abbrev-ref HEAD')).stdout.toString().trim();
   const unstage = (await execAsset('git reset')).stdout.toString().trim();
   await waitForAsset(5000);
-  const i18nFiles = await recursive(i18nPath).then(
-    (files: any) => {
-      return files
-      .map((file: string) => {
-      return file.split('\\').join('/');
-      })
-      .join(' ');
-    },
-    (error: any) => {
-      console.error('something exploded', error);
-    }
-  );
-  console.log('i18nFiles : ', i18nFiles);
-  const stage = (await execAsset('git add ' + i18nFiles)).stdout.toString().trim();
-  console.log('stage file' + i18nFiles, stage);
-  await execAsset('git commit -m \"Release i18n \" ' + i18nFiles);
+  const stage = (await execAsset('git add src/assets/i18n/**/*.json')).stdout.toString().trim();
+  await waitForAsset(5000);
+  await execAsset('git commit -m \"Release i18n \" ');
   await execAsset('git push origin ' + branch);
   console.log(`Commit et push sur la branche : '${branch}'`);
 }
@@ -42,6 +29,19 @@ async function getAllI18N() {
       fileSystem.renameSync(file, newPath );
     });
   });
+}
+async function getRecursiveAllI18N(chemin: string) {
+  recursive(chemin).then(
+    (files: any) => {
+      return files
+      .map((file: string) => {
+      return file.split('\\').join('/');
+      })
+      .join(' ');
+    },
+    (error: any) => {
+      console.error('Erreur getRecursiveAllI18N ', error);
+    });
 }
 getAllI18N();
 assetCommitAndPush();
