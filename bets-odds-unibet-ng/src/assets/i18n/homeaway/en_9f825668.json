@@ -1,6 +1,6 @@
 {
     "demo": {
-        "code":"ha",
+        "code":"EN",
         "text": "Home / Away",
         "sayHello" : "Hello {{name}}"
     }
