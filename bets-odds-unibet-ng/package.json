@@ -1,6 +1,6 @@
 {
  "name": "bets-odds-unibet-ng",
- "version": "4.0.19",
+ "version": "4.0.20",
  "scripts": {
   "ng": "ng",
   "start": "ng serve",
