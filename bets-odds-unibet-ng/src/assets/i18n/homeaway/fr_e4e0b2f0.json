@@ -1,0 +1,7 @@
+{
+    "demo": {
+        "code":"ha",
+        "text": "Domicile / Extérieur",
+        "sayHello" : "Salut {{name}}"
+    }
+}
