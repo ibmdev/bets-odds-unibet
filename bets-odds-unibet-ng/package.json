@@ -17,7 +17,8 @@
   "renameI18N": "ts-node asset.rename.i18n.ts",
   "test-build-info": "node node_modules/lib-version/lib/scripts/build.info.js",
   "test-update-package": "node node_modules/lib-version/lib/scripts/update.package.js",
-  "test-lib": "npm run test-update-package && npm run test-build-info "
+  "test-rename-i18n": "node node_modules/lib-version/lib/scripts/rename.i18n.js",
+  "test-lib": "npm run test-update-package && npm run test-build-info && npm run test-rename-i18n "
  },
  "private": true,
  "dependencies": {
