@@ -104,6 +104,12 @@ https://github.com/ngx-translate/core/issues/886
 
 https://angular-2-training-book.rangle.io/handout/modules/shared-modules-di.html
 
+## Création d'une librairie en Angular 
+
+https://angular.io/guide/creating-libraries
+
+https://www.tsmean.com/articles/how-to-write-a-typescript-library/
+
 
 
 
