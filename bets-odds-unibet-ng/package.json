@@ -1,6 +1,6 @@
 {
  "name": "bets-odds-unibet-ng",
- "version": "4.0.30",
+ "version": "4.0.31",
  "scripts": {
   "ng": "ng",
   "start": "ng serve",
@@ -17,8 +17,7 @@
   "renameI18N": "ts-node asset.rename.i18n.ts",
   "test-build-info": "node node_modules/lib-version/lib/scripts/build.info.js",
   "test-update-package": "node node_modules/lib-version/lib/scripts/update.package.js",
-  "test-lib":"npm run test-update-package && npm run test-build-info "
-  
+  "test-lib": "npm run test-update-package && npm run test-build-info "
  },
  "private": true,
  "dependencies": {
